@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quiz_app/components/quiz-1.dart';
 import 'package:quiz_app/components/quiz-2.dart';
 import 'package:quiz_app/components/quiz-3.dart';
+import './models/question-data.dart';
 
 class Demopractice extends StatelessWidget{
   final String img; 
@@ -18,7 +19,7 @@ class Demopractice extends StatelessWidget{
         if(text=="quiz-1"){
          Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) =>  Quiz1()));
+              MaterialPageRoute(builder: (context) =>  QuestionData()));
         }
         if(text=="quiz-2"){
           Navigator.push(
