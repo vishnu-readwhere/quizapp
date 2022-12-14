@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import './home_screen.dart';
-import 'package:get/get.dart';
+//import './home_screen.dart';
+
 import './demo_practise.dart';
 
 void main() {
@@ -35,7 +35,7 @@ void initState() {
 		()=>Navigator.pushReplacement(context,
 										MaterialPageRoute(builder:
 														(context) =>
-														MainPractice()
+														HomeScreen()
 														)
 									)
 		);
@@ -47,11 +47,11 @@ Widget build(BuildContext context) {
      
         Column(children: [
             Container(
-        height:700,
+        height:820,
         width:380,
         color: Colors.white,
         
-        child:Image.asset("assets/quiz.jpeg", width: 300,height: 1200)
+        child:Image.asset("assets/quiz.jpeg", width: 300,height: 1400)
       )
         ]);
     
