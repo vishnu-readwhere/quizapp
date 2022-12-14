@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'data_demo_practice .dart';
+import '../models/data_demo_practice .dart';
 class MainPractice extends  StatelessWidget{
   //final String img = "assets/quiz";
   @override 

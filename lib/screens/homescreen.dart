@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:quiz_app/screens/home_widget.dart';
+import 'package:quiz_app/widgets/home_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
