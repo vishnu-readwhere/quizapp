@@ -1,9 +1,11 @@
 import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:quiz_app/screens/demo_practise.dart';
 //import './home_screen.dart';
 
-import './demo_practise.dart';
+import 'package:get/get.dart';
+import 'package:quiz_app/screens/homescreen.dart';
 
 void main() {
 runApp(MyApp());
@@ -35,7 +37,7 @@ void initState() {
 		()=>Navigator.pushReplacement(context,
 										MaterialPageRoute(builder:
 														(context) =>
-														HomeScreen()
+													HomeScreen()
 														)
 									)
 		);
@@ -47,7 +49,7 @@ Widget build(BuildContext context) {
      
         Column(children: [
             Container(
-        height:820,
+        height:720,
         width:380,
         color: Colors.white,
         
