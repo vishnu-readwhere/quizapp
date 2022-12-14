@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 class NextButton extends StatelessWidget {
-  const NextButton({super.key});
-
+  const NextButton({super.key,required this.nextQuestion});
+  final VoidCallback nextQuestion;
   @override
   Widget build(BuildContext context) {
-    return Container(
+   return GestureDetector( 
+      onTap:nextQuestion,
+    child:Container(
+    
       width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -13,6 +16,7 @@ class NextButton extends StatelessWidget {
       ),
       padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: Text('Next Question',textAlign: TextAlign.center,),
-    );
+    )
+   );
   }
 }

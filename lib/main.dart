@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import './home_screen.dart';
-
+import 'package:get/get.dart';
 import './demo_practise.dart';
 
 void main() {
@@ -12,7 +12,7 @@ runApp(MyApp());
 class MyApp extends StatelessWidget {
 @override
 Widget build(BuildContext context) {
-	return MaterialApp(
+	return GetMaterialApp(
 	title: 'Splash Screen',
 	theme: ThemeData(
 		primarySwatch: Colors.green,

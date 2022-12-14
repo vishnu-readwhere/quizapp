@@ -3,6 +3,7 @@ import 'package:quiz_app/components/quiz-1.dart';
 import 'package:quiz_app/components/quiz-2.dart';
 import 'package:quiz_app/components/quiz-3.dart';
 import './models/question-data.dart';
+import 'package:get/get.dart';
 
 class Demopractice extends StatelessWidget{
   final String img; 
@@ -17,14 +18,10 @@ class Demopractice extends StatelessWidget{
         onPressed: (() {
         // ignore: avoid_print
         if(text=="quiz-1"){
-         Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) =>  QuestionData()));
+        Get.to(()=>QuestionData());
         }
         if(text=="quiz-2"){
-          Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) =>  Quiz2()));
+         Get.to(()=>Quiz1());
         }
         if(text=="quiz-3"){
            Navigator.push(
